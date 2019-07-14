@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'image_banner.dart';
+import 'text_section.dart';
 
 class LocationDetail extends StatelessWidget {
   @override
@@ -8,7 +10,16 @@ class LocationDetail extends StatelessWidget {
       appBar: AppBar(
         title: Text('Location Details'),
       ),
-      body: Text('Hello'),
+      body:Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          ImageBanner('assets/images/image_1.jpg'),
+          TextSection('Summary','something1'),
+          TextSection('Summary','something1'),
+          TextSection('Summary','something1'),
+        ],
+      ) 
     );
   }
   
